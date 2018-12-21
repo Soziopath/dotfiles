@@ -28,7 +28,6 @@
 	nnoremap K gg
 
 	map <tab> %
-	map <C-c> "+y<CR>
 
 	set backspace=indent,eol,start
 
