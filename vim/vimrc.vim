@@ -5,7 +5,7 @@
 	set tabstop=4
 	set shiftwidth=4
 	set dir=/tmp/
-	set relativenumber 
+	"set relativenumber 
 	set number
 
 	autocmd Filetype html setlocal sw=2 expandtab
@@ -16,8 +16,10 @@
 
 	set hlsearch
 	nnoremap <C-l> :nohl<CR><C-l>:echo "Search Cleared"<CR>
-	nnoremap <C-u> :set norelativenumber<CR>:set nonumber<CR>:echo "Line numbers turned off."<CR>
-	nnoremap <C-n> :set relativenumber<CR>:set number<CR>:echo "Line numbers turned on."<CR>
+	"nnoremap <C-u> :set norelativenumber<CR>:set nonumber<CR>:echo "Line numbers turned off."<CR>
+	nnoremap <C-u> :set nonumber<CR>:echo "Line numbers turned off."<CR>
+	"nnoremap <C-n> :set relativenumber<CR>:set number<CR>:echo "Line numbers turned on."<CR>
+	nnoremap <C-n> :set number<CR>:echo "Line numbers turned on."<CR>
 
 	nnoremap n nzzzv
 	nnoremap N Nzzzv
