@@ -111,6 +111,9 @@
 		let g:instant_markdown_autostart = 0	" disable autostart
 		map <leader>md :InstantMarkdownPreview<CR>
 
+"" vim-notes
+	let g:notes_directories = ['~/ownCloud/notes']
+
 "" Plugins
 " Specify a directory for plugins
 " " - For Neovim: ~/.local/share/nvim/plugged
@@ -125,6 +128,8 @@ Plug 'soziopath/vim-folding'
 Plug 'junegunn/fzf'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-notes'
 
 call plug#end()
 "" testing stuff
