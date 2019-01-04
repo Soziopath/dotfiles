@@ -100,7 +100,7 @@
 	" https://github.com/vimwiki/vimwiki
 		set nocompatible
 		filetype plugin on
-		let g:vimwiki_folding = 'list'
+		let g:vimwiki_folding = 'expr'
 		let g:vimwiki_list = [{'path':'~/ownCloud/vimwiki'}]
 	" vimwiki with markdown support
 		"let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
@@ -123,6 +123,8 @@ Plug 'suan/vim-instant-markdown'
 Plug 'nelstrom/vim-markdown-folding'
 Plug 'soziopath/vim-folding'
 Plug 'junegunn/fzf'
+Plug 'vim-airline/vim-airline'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 "" testing stuff
