@@ -122,7 +122,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'scrooloose/nerdtree'
 Plug 'suan/vim-instant-markdown'
 Plug 'nelstrom/vim-markdown-folding'
-Plug '~/.vim/plugged/vim-folding'
+Plug 'soziopath/vim-folding'
 
 call plug#end()
 "" testing stuff
