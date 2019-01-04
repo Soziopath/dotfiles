@@ -96,17 +96,14 @@
 	autocmd FileChangedShellPost *
 	  \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
 
-"" pathogen
-"	execute pathogen#infect() 
-
-"" vimwiki - Personal Wiki for Vim
+"" VimWiki
 	" https://github.com/vimwiki/vimwiki
 		set nocompatible
 		filetype plugin on
 		let g:vimwiki_folding = 'list'
-		let g:vimwiki_list = [{'path':'~/ownCloud/vimwiki', 'path_html':'~/cerebra/export/html/'}]
+		let g:vimwiki_list = [{'path':'~/ownCloud/vimwiki'}]
 	" vimwiki with markdown support
-"		let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
+		"let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
 	" helppage -> :h vimwiki-syntax 
 
 "" vim-instant-markdown - Instant Markdown previews from Vim
