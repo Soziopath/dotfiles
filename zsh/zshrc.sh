@@ -11,6 +11,7 @@
 	mkdir -p /tmp/log
 	alias vi='vim'
 	alias ll="ls -alh"
+	alias vimc='vim ~/dotfiles/vim/vimrc.vim'
 	
 	
 	# This is currently causing problems (fails when you run it anywhere that isn't a git project's root directory)

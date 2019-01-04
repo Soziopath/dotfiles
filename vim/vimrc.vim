@@ -97,14 +97,14 @@
 	  \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
 
 "" pathogen
-	execute pathogen#infect() 
+"	execute pathogen#infect() 
 
 "" vimwiki - Personal Wiki for Vim
 	" https://github.com/vimwiki/vimwiki
 		set nocompatible
 		filetype plugin on
 	" vimwiki with markdown support
-		let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
+"		let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
 	" helppage -> :h vimwiki-syntax 
 
 "" vim-instant-markdown - Instant Markdown previews from Vim
@@ -112,5 +112,18 @@
 		let g:instant_markdown_autostart = 0	" disable autostart
 		map <leader>md :InstantMarkdownPreview<CR>
 
+"" Plugins
+" Specify a directory for plugins
+" " - For Neovim: ~/.local/share/nvim/plugged
+" " - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
+
+Plug 'vimwiki/vimwiki'
+Plug 'scrooloose/nerdtree'
+Plug 'suan/vim-instant-markdown'
+Plug 'nelstrom/vim-markdown-folding'
+Plug '~/.vim/plugged/vim-folding'
+
+call plug#end()
 "" testing stuff
 	" vimwiki markdown folding
