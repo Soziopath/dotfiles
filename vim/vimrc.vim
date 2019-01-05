@@ -1,5 +1,6 @@
 "" General Vim settings
 	syntax on
+	set timeoutlen=1000 ttimeoutlen=0
 	let mapleader=","
 	set autoindent
 	set tabstop=4
