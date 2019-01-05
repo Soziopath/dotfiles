@@ -1,4 +1,4 @@
-# Vars
+# Vars {{{1
 	HISTFILE=~/.zsh_history
 	SAVEHIST=1000 
 	setopt inc_append_history # To save every command before it is executed 
@@ -6,23 +6,22 @@
 
 	git config --global push.default current
 
-# Aliases
+# Aliases {{{1
 	alias v="vim -p"
 	mkdir -p /tmp/log
 	alias vi='vim'
 	alias ll="ls -alh"
 	alias vimc='vim ~/dotfiles/vim/vimrc.vim'
 	
-	
 	# This is currently causing problems (fails when you run it anywhere that isn't a git project's root directory)
 	# alias vs="v `git status --porcelain | sed -ne 's/^ M //p'`"
 
-# Settings
+# Settings {{{1
 	export VISUAL=vim
 
 source ~/dotfiles/zsh/plugins/fixls.zsh
 
-#Functions
+#Functions {{{1
 	# Loop a command and show the output in vim
 	loop() {
 		echo ":cq to quit\n" > /tmp/log/output 
@@ -46,7 +45,7 @@ source ~/dotfiles/zsh/plugins/fixls.zsh
 # For vim mappings: 
 	stty -ixon
 
-# Completions
+# Completions {{{1
 # These are all the plugin options available: https://github.com/robbyrussell/oh-my-zsh/tree/291e96dcd034750fbe7473482508c08833b168e3/plugins
 #
 # Edit the array below, or relocate it to ~/.zshrc before anything is sourced

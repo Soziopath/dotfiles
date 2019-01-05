@@ -1,4 +1,4 @@
-"" General Vim settings
+" General Vim settings {{{1
 	syntax on
 	set timeoutlen=1000 ttimeoutlen=0
 	let mapleader=","
@@ -7,6 +7,7 @@
 	set shiftwidth=4
 	set dir=/tmp/
 	set number
+	set foldmethod=marker
 
 	autocmd Filetype html setlocal sw=2 expandtab
 	autocmd Filetype javascript setlocal sw=4 expandtab
@@ -41,7 +42,7 @@
 	set pastetoggle=<F2>
 	set incsearch
 
-"" Language Specific
+" Language Specific {{{1
 	" Tabs
 		so ~/dotfiles/vim/tabs.vim
 	" General
@@ -65,7 +66,7 @@
 	" Markup
 		inoremap <leader>< <esc>I<<esc>A><esc>yypa/<esc>O<tab>
 
-"" File and Window Management 
+" File and Window Management {{{1
 	inoremap <leader>w <Esc>:w<CR>
 	nnoremap <leader>w :w<CR>
 	inoremap <leader>q <ESC>:q<CR>
@@ -77,7 +78,7 @@
 	nnoremap <leader>v :vsplit<CR>:w<CR>:Ex<CR>
 	nnoremap <leader>s :split<CR>:w<CR>:Ex<CR>
 
-"" Return to the same line you left off at
+" Return to the same line you left off at {{{1
 	augroup line_return
 		au!
 		au BufReadPost *
@@ -86,7 +87,7 @@
 			\ endif
 	augroup END
 
-"" Auto load
+" Auto load {{{1
 	" Triger `autoread` when files changes on disk
 	" https://unix.stackexchange.com/questions/149209/refresh-changed-content-of-file-opened-in-vim/383044#383044
 	" https://vi.stackexchange.com/questions/13692/prevent-focusgained-autocmd-running-in-command-line-editing-mode
@@ -97,25 +98,7 @@
 	autocmd FileChangedShellPost *
 	  \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
 
-"" VimWiki
-	" https://github.com/vimwiki/vimwiki
-		set nocompatible
-		filetype plugin on
-		let g:vimwiki_folding = 'expr'
-		let g:vimwiki_list = [{'path':'~/ownCloud/vimwiki'}]
-	" vimwiki with markdown support
-		"let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
-	" helppage -> :h vimwiki-syntax 
-
-"" vim-instant-markdown - Instant Markdown previews from Vim
-	" https://github.com/suan/vim-instant-markdown
-		let g:instant_markdown_autostart = 0	" disable autostart
-		map <leader>md :InstantMarkdownPreview<CR>
-
-"" vim-notes
-	let g:notes_directories = ['~/ownCloud/notes']
-
-"" Plugins
+" Plugins {{{1
 " Specify a directory for plugins
 " " - For Neovim: ~/.local/share/nvim/plugged
 " " - Avoid using standard Vim directory names like 'plugin'
@@ -125,7 +108,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'scrooloose/nerdtree'
 Plug 'suan/vim-instant-markdown'
 Plug 'nelstrom/vim-markdown-folding'
-Plug 'soziopath/vim-folding'
+"Plug 'soziopath/vim-folding'
 Plug 'junegunn/fzf'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
@@ -133,5 +116,26 @@ Plug 'xolox/vim-misc'
 Plug 'xolox/vim-notes'
 
 call plug#end()
-"" testing stuff
+
+" Plugins - settings {{{1
+
+" VimWiki
+	" https://github.com/vimwiki/vimwiki
+		set nocompatible
+		filetype plugin on
+		let g:vimwiki_folding = 'expr'
+		let g:vimwiki_list = [{'path':'~/ownCloud/vimwiki'}]
+	" vimwiki with markdown support
+		"let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
+	" helppage -> :h vimwiki-syntax 
+
+" vim-instant-markdown - Instant Markdown previews from Vim
+	" https://github.com/suan/vim-instant-markdown
+		let g:instant_markdown_autostart = 0	" disable autostart
+		map <leader>md :InstantMarkdownPreview<CR>
+
+" vim-notes
+	let g:notes_directories = ['~/ownCloud/notes']
+
+" testing stuff {{{1
 	" vimwiki markdown folding
