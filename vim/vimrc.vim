@@ -30,7 +30,7 @@
 
 	map <tab> %
 	map <C-C> "+y
-	map <C-f> :FZF<CR>
+	map <C-f> :FZF ~<CR>
 	map <C-o> :NERDTreeToggle<CR>
 	set backspace=indent,eol,start
 
