@@ -141,3 +141,4 @@ call plug#end()
 
 " testing stuff {{{1
 	" vimwiki markdown folding
+	" test
