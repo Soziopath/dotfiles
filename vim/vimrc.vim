@@ -14,7 +14,8 @@
 
 	set cursorline
 	hi Cursor ctermfg=White ctermbg=Yellow cterm=bold guifg=white guibg=yellow gui=bold
-    hi LineNr ctermfg=black ctermbg=darkgrey
+"    hi LineNr ctermfg=black ctermbg=darkgrey
+	hi LineNr ctermfg=4 ctermbg=232
 
 	set hlsearch
 	nnoremap <C-l> :nohl<CR><C-l>:echo "Search Cleared"<CR>
