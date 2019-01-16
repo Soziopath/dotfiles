@@ -1,0 +1,153 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/home/xadmin/
+	..
+1547464410
+'b
+	/home/xadmin/bin/
+	..
+1547465967
+'h
+	/home/xadmin/
+	..
+1547465967
+'z
+	/home/xadmin/.config/vifm
+	..
+1547464410
+
+# Bookmarks:
+
+# TUI:
+al
+q1
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/tmp/dotfiles/.config/vifm
+	scripts
+2
+d/home/xadmin/.config
+	qt5ct
+11
+d/home/xadmin
+	bak
+9
+d/home/xadmin/bak
+	dotfiles
+1
+d/home/xadmin/bak/dotfiles
+	zsh
+1
+d/home/xadmin/bak/dotfiles/zsh
+	plugins
+1
+d/home/xadmin/bak/dotfiles/zsh/plugins
+	oh-my-zsh
+1
+d/home/xadmin/bak/dotfiles/zsh/plugins/oh-my-zsh
+	plugins
+1
+d/home/xadmin/bak/dotfiles/zsh/plugins/oh-my-zsh/plugins
+	vim-interaction
+2
+d/home/xadmin/bak/dotfiles/zsh/plugins/oh-my-zsh/plugins/vim-interaction
+	..
+0
+d/home/xadmin/bak/dotfiles/zsh/plugins/oh-my-zsh/plugins
+	..
+0
+d/home/xadmin/bak/dotfiles/zsh/plugins/oh-my-zsh
+	..
+0
+d/home/xadmin/bak/dotfiles/zsh/plugins
+	..
+0
+d/home/xadmin/bak/dotfiles/zsh
+	..
+0
+d/home/xadmin/bak/dotfiles
+	..
+0
+d/home/xadmin/bak
+	..
+0
+d/home/xadmin
+	dotfiles
+10
+d/home/xadmin/dotfiles
+	deploy
+6
+d/home/xadmin
+	dotfiles.bak
+26
+d/home/xadmin/dotfiles.bak
+	.gitignore
+6
+d/home/xadmin
+	..
+0
+d/home
+	..
+0
+d/
+	usr
+17
+d/usr
+	share
+8
+d/usr/share
+	backgrounds
+19
+d/usr/share/backgrounds
+	deserted.jpg
+8
+d
+
+# Right window history (oldest to newest):
+D/tmp/dotfiles/.config/vifm
+	..
+0
+D/home/xadmin
+	Pictures
+5
+D
+
+# Command line history (oldest to newest):
+:q
+:h
+
+# Search history (oldest to newest):
+/.bashrc
+/backgrou
+
+# Prompt history (oldest to newest):
+pbash_cheat_sheet.pdf.test
+pdeploy
+
+# Local filter history (oldest to newest):
+
+# Registers:
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+t/home/xadmin/.local/share/vifm/Trash/000_bash_cheat_sheet.pdf.test
+	/home/xadmin/bash_cheat_sheet.pdf.test
+
+# State:
+f
+i1
+[.0
+[F
+F
+I1
+].1
+]F
+s0
